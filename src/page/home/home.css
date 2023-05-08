@@ -1,0 +1,19 @@
+.home-div {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  margin: 0 10px;
+}
+
+.filter-div {
+  width: 20%;
+  background: #859635;
+  height: 720px;
+}
+
+.product-list {
+  width: 80%;
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}

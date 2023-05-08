@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Selena's Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+/*----------------------*/
+
+.h1 {
+            width: auto;
+            height: 300px;
+            padding: 10px;
+
+            background-color: darkgrey;
+            box-shadow: 10px 10px #4273b9;
+            padding: 20px;
+            text-align: center;
+           
+  background-repeat: repeat, repeat;
+  background-image: url("/istockphoto-1366067377-612x612.jpg"), url("/background-2426328__340.webp");
+  background-blend-mode:hard-light;
+            color: white;
+        }
+
+       
+        #borderimg {
+            border: 85px solid transparent;
+            padding: 20px;
+            
+
+        }
+        /*------------------------*/
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        /*logo Title */
+        .header {
+            padding: 80px;
+            text-align: center;
+            background: #1abc9c;
+            color: white;
+        }
+
+        /* Increase the font size of the heading */
+        .header h1 {
+            font-size: 30px;
+        }
+
+        /* Style the top navigation bar */
+        .navbar {
+            overflow: hidden;
+            background-color: #4273b9;
+           
+        }
+
+        /* Style the navigation bar links */
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        /* Right-aligned link */
+        .navbar a.right {
+            float: right;
+        }
+
+        /* Change color on hover */
+        .navbar a:hover {
+            background-color: rgb(36, 205, 104);
+            color: rgb(7, 15, 13);
+        }
+
+        /* Column container */
+        .row {
+            display: -ms-flexbox;
+           
+            display: flex;
+            -ms-flex-wrap: wrap;
+           
+            flex-wrap: wrap;
+        }
+
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/left column */
+        .side {
+            -ms-flex: 30%;
+            flex: 30%;
+            background-color: #4273b9;
+            padding: 20px;
+        }
+
+        /* Main column */
+        .main {
+            -ms-flex: 70%;
+        
+            flex: 70%;
+            background-color:aliceblue;
+            padding: 20px;
+        }
+
+        
+        .fb {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+        }
+
+
+
+        * {
+  box-sizing: border-box;
+}
+
+/* ------------------------------*/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize:vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #0a0a0a;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* -------------------------*/
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color:  rgb(133, 117, 189);
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: rgb(133, 117, 189);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+/*---------------------------------*/
+
+.button:hover {
+  background-color: rgb(99, 218, 95);
+}
+
+        @media screen and (max-width: 700px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+        }
+
+        
+        .shadow {
+  text-shadow: 2px 2px 5px rgb(46, 144, 33);
+}
+
+
+
+    </style>
+</head>
+
+<body>
+<div id="Logo"></div>
+
+    <div class="navbar">
+        <a href="#Info">Home</a>
+        <a href="#UNI">University</a>
+        <a href="#Major">Major</a>
+        <a href="#Web">Labs</a>
+        <a href="#Email" class="right"> Email</a>
+    </div>
+<div class=" shadow">
+<div class="h1">
+    <h1 id="borderimg">Selena's
+        personal page </h1>
+
+</div>
+</div>
+    
+    <br>
+    <!--  <input type="submit" value="Submit"> -->
+
+  
+    <!-- eND OF NAVBAR-->
+
+    <div class="row">
+        <div class="side">
+            <h2 id="Info">Personal Info:</h2>
+           
+            <div  style="height:200px;">
+<img src="/315086663_449214864000713_290998039937679064_n.jpg" height="200px"  alt="">
+
+            </div>
+            <p>My name is Selena Shomali, im 19 years old, i was born and raised in beitsahour city, studeid high school at lain
+            beitsahour school, went to bethlehem univerity to countiue my learning journy, i travelled three times to amireca and
+            two times to turkey, yes i do love travelling, and adventures..</p>
+            <h3>Some photos of the places i went:</h3>
+            <p>Photos that i took myself:</p>
+            <div  style="height:60px;">
+                <img src="/313923499_868301860851879_7319769539881362832_n (1).jpg" height="70px" width="150px" alt="">
+            </div><br>
+            <div  style="height:60px;">
+                <img src="/315150189_6237369529629602_4049640867483041321_n.jpg" height="70px" width="150px" alt="">
+            </div><br>
+            <div  style="height:60px;">
+                <img src="/315305652_564512262056840_5582734636406653781_n.jpg" height="70px" width="150px" alt="">
+            </div>
+        </div>
+        
+        <div class="main">
+            <h2 id="UNI"> Bethlehem University</h2>
+           
+            <div  style="height:200px;">
+                <img src="/download.png" alt="">
+            </div>
+            <p>Bethlehem University</p>
+            <p>Bethlehem University is a Catholic co-educational institution in the Lasallian tradition whose mission is to provide
+            quality higher education to the people of Palestine and to serve them in its role as a center for the advancement,
+            sharing and use of knowledge.
+            
+            The University emphasizes excellence in academic programs and the development of students as committed people prepared
+            to assume leading positions in society. The University fosters shared values, moral principles, and dedication to
+            serving the common good.</p>
+            <br>
+            <h2 id="Major">Major</h2>
+            <h5>Software Engineering</h5>
+            <div style="height:200px;">
+                <img src="/computer-program-coding-screen_53876-138060.webp" height="240px" width="400px" alt="">
+            </div>
+            <p>Software Enhineering</p>
+            <p> 
+                I study Software Engineering at bethlehem university, and this major is defined as a process of analyzing user requirements and then designing, building, and testing
+                software application which will satisfy those requirements.
+            </p><br>
+            <br>
+            
+        </div>
+       
+
+        <div class="side">
+<div class="main">
+    <h2>Bethlehem City</h2>
+    <p id="img"><img src="/d9833e8a-city-302150-172979cf18e.jpg" alt="bethlehem"
+            style="width:170px;height:170px;margin-Left:15px;">
+        Bethlehem is an agricultural market and trade town that is closely linked to nearby Jerusalem. For a long time
+        the town
+        has been important as a pilgrimage and tourist centre, although, in the decades following the Six-Day War,
+        tourism and
+        pilgrimage were frequently affected by the ongoing conflict. Several initiatives were undertaken in the early
+        21st
+        century to encourage local economic development through renewed tourism by Western pilgrims.</p>
+
+</div>
+        </div>
+
+</div>
+   
+<br>
+<br>
+
+
+
+    <div class="about-section">
+        <h1 id="Web">Web Lectures Information</h1>
+        <p>Here you can find the web materials we took the last couple weeks.</p>
+            </div>
+    
+    <h2 style="text-align:center">Labs</h2>
+    <div class="row">
+        <div class="column">
+            <div class="">
+                <div class="container">
+                    <h2>Lab1&2</h2>
+                    <p class="title">what is HTML</p>
+                    <p>We leared the basics of html and did a simple website using HTML</p>
+                    <p>click down below to view the website!</p>
+                    <p><button class="button"><a href="http://202006088.epizy.com/Lab2/"> Click here! &#128516; </a></button></p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="column">
+            <div class="card">
+                
+                <div class="container">
+                    <h2>Lab3&4</h2>
+                    <p class="title">CSS</p>
+                    <p>In these labs we learend css and how to use css to design the page.</p>
+                    <p>link of the website we did down bellow!</p>
+                    <p><button class="button"><a href="http://202006088.epizy.com/Lab5/" 
+                        >Click here! &#128516;</a></button></p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="column">
+            <div class="card">
+                <div class="container">
+                    <h2>Lab5&6</h2>
+                    <p class="title">More CSS!</p>
+                    <p>In these labs we leaed more about css
+                        media queuery and grids..
+                    </p>
+                    <p>link of the website we made!</p>
+                    <p><button class="button"><a href="http://202006088.epizy.com/Lab7/"> Click here! &#128516;</a></button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div style="text-align:center">
+            <h2 id="Email">Email me !</h2>
+            <p>Swing by for a cup of coffee, or leave me a message:</p>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="/59877.jpg" width="100%" height="100%">
+            </div>
+            <div class="column">
+                <form action="/action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="australia">Palestine</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                    <div class="column">
+<input type="submit" value="Submit">
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <h2>THANK YOU !  &#128516;  </h2>
+        <p class="right"> copyright &copy;2022</p>
+    </div>
+<h4> <a href=" #Logo"> Back To Top</a></h4>
+</body>
+
+</html>
